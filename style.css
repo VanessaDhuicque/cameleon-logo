@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.logo-container {
+  position: relative;
+  width: 300px; /* Ajuste selon la taille de ton logo */
+  height: auto;
+}
+
+#logo-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.pupil {
+  position: absolute;
+  top: 42%;
+  /*Ajustemanuellementpourcentrerdansl'œil*/left: 73%;
+  /*Ajustemanuellementpourcentrerdansl'œil*/width: 32px;
+  /*Tailledelapupille*/height: 32px;
+  background-color: white;
+  /*Lacouleurdelapupille(peuxêtrechangée)*/border-radius: 50%;
+  /*Créeuneformecirculaire*/transform: translate(-50%, -50%);
+  /*Centreparfaitementlapupille*/z-index: 1;
+  /*Assurequelapupilleestau-dessusdulogo*/pointer-events: none;
+   /* Pour que la pupille ne bloque pas les interactions */:;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
